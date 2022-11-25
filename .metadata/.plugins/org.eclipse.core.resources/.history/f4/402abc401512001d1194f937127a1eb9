@@ -1,0 +1,17 @@
+package com.ho.token.generator;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import javax.servlet.http.HttpServletRequest;
+
+public class hoTokenGenerator {
+
+	// 토큰 : 중복 안 나게 (절대 중복 나지 않을만한 거 ?) - 날짜
+	public static void generate(HttpServletRequest req) {
+		Date now = new Date();
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmssSS");
+		String token = sdf.format(now);
+		req.setAttribute("token", token);
+	}
+}

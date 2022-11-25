@@ -1,0 +1,25 @@
+@charset "EUC-KR";
+@import url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
+
+#LogOutDiv{
+	background-color: #FFD740;
+	width: 60px;
+	height: 30px;
+	font-size: 20px;
+}
+
+#LogOutDiv:hover{
+	color:#616161;
+}
+
+#LogOutDiv:active{
+	color:#616161;
+}
+
+#profilePhoto{
+	width: 60px;
+}
+
+#profilePhoto img{
+	max-width: 60px;
+}

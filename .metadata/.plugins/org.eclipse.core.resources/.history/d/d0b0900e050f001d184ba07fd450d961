@@ -1,0 +1,35 @@
+@charset "EUC-KR";
+@import url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
+
+body{
+	background-color: #FFCA28;
+}
+
+#joinBorderTable{
+	width: 300px;
+	height: 500px;
+	border: #212121 solid 3px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 200px;
+}
+
+#joinTable{
+	width: 80%;
+	height: 80%;
+	font-family: 'Galmuri9';
+}
+
+select {
+	width: 70px;
+	font-family: 'Galmuri9';
+}
+
+.generalInput input{
+	width: 300px;
+	font-family: 'Galmuri9';
+}
+.addrInput input{
+	width: 90px;
+	font-family: 'Galmuri9';
+}

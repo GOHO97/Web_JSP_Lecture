@@ -1,0 +1,103 @@
+@charset "EUC-KR";
+@import url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
+
+
+
+table {
+	width: 400px;
+	box-shadow: 5px 5px 5px #0D47A1;
+	font-family: 'Galmuri9';
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 14pt;
+}
+
+th {
+	height: 70px;
+	font-size: 30pt;
+	background-color: #0D47A1;
+	color: white;
+	font-weight: 900;
+}
+
+.td1 {
+	width: 60px;
+	height: 40px;
+	color: #0D47A1;
+}
+
+.boxType {
+	/* 
+
+		input시리즈 : css단독조절 
+
+		(table에 준게 적용 안됨)
+
+	*/
+	width: 95%;
+	height: 30px;
+	border: none;
+	border-bottom: #0D47A1 solid 2px;
+	font-family: 'Galmuri9';
+	font-size: 14pt;
+	/* input에 쓴 글자 정렬 */
+	text-align: center;
+	/* 선택하면 생기는 까만 테두리 */
+	outline: none;
+	background-color: transparent;
+}
+
+.boxType:focus {
+	background-color: #E3F2FD;
+}
+
+.boxType::placeholder {
+	color: #42A5F5;
+}
+
+select {
+	background-color: transparent;
+	width: 95%;
+	border: none;
+	border-bottom: #0D47A1 solid 2px;
+	outline: none;
+	font-family: 'Galmuri9';
+	font-size: 14pt;
+}
+
+textarea{
+	/* input이랑 기본 폰트도 좀 다른 */
+	font-family: 'Galmuri9';
+	font-size: 12pt;
+	/* 좀 커야 여러줄 써지는지 알테니*/
+	height:70px;
+	
+	/* input보다 기본 padding이 더 들어가 있음.*/
+	padding:0px;
+	
+	/* 사용자가 크기 조절 못하게*/
+	resize: none;
+	
+	outline:none;
+	border: 1px solid black;
+	border-radius: 3px;
+	border-bottom: #0D47A1 solid 3px;
+	box-shadow: 3px 3px 3px #0D47A1;
+	width: 250px;
+	margin-left: 28px;
+}
+
+.btnType{
+	border:none;
+	background-color: transparent;
+	color: #0D47A1;
+	font-size: 15pt;
+	font-family: 'Galmuri9';
+	margin:10px;
+	cursor: pointer;
+}
+
+.btnType:hober{
+	background-color: #0D47A1;
+	color: white;
+}

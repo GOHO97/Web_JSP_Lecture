@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript"  src="hoValidChecker.js"></script>
+<script type="text/javascript"  src="UC.js"></script>
+
+</head>
+<body>
+	<form action="UnitConversion.jsp" name="f" onsubmit="return check();">
+		<table>
+			<tr align="center">
+				<th>
+					단위변환
+				</th>
+			</tr>
+			<tr align="center">
+				<td>
+					변환활 값
+				</td>
+			</tr>
+			<tr align="center">
+				<td>
+					<input name="num" >
+				</td>
+			</tr>
+			<tr align="center">
+				<td>
+					단위
+				</td>
+			</tr>
+			<tr align="center">
+				<td>
+					<select name="unit">
+						<option value="cm">cm → inch</option>
+						<option value="sm">㎡ → 평</option>
+						<option value="c">℃ → ℉</option>
+						<option value="kmh">km/h → mi/h</option>
+					</select>
+				</td>
+			</tr>
+			<tr align="center">
+				<td>
+					<button>변환</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

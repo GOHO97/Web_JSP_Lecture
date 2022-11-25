@@ -1,0 +1,18 @@
+function goJoinPage(){
+	location.href="JoinController";
+}
+
+function goMyInfoPage(){
+	location.href= "MemberInfoController";
+}
+
+function logOut(){
+	location.href="loginController";
+}
+
+function goMemberDelete(id){
+	var really = prompt("진짜 탈퇴할거면 ㅌㅌ라고 입력하시오");
+	if(really=="ㅋㅋ"){
+		location.href="MemberDeleteController";
+	}
+}

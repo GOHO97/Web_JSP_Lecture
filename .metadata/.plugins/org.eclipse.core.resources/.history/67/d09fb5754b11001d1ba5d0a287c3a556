@@ -1,0 +1,44 @@
+@charset "EUC-KR";
+@import url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
+
+#welcomeTable{
+	width:100px;
+	height: 200px;
+}
+
+#LogOutDiv{
+	background-color: #FFD740;
+	width: 60px;
+	height: 30px;
+	font-size: 20px;
+}
+
+#LogOutDiv:hover{
+	color:#616161;
+}
+
+#LogOutDiv:active{
+	color:#616161;
+}
+#MyInfoDiv{
+	background-color: #FFD740;
+	width: 60px;
+	height: 30px;
+	font-size: 20px;
+}
+
+#MyInfoDiv:hover{
+	color:#616161;
+}
+
+#MyInfoDiv:active{
+	color:#616161;
+}
+
+#profilePhoto{
+	width: 100px;
+}
+
+#profilePhoto img{
+	max-width: 90px;
+}

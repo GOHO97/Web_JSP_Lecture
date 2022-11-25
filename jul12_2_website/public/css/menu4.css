@@ -1,0 +1,19 @@
+@charset "EUC-KR";
+@import url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
+.picture{
+	width: 310px;
+	background-color: #FFFDE7;
+	box-shadow: 3px 3px 3px #263238;
+	float: left;
+	margin: 10px;
+}
+.picture img{
+	max-width: 300px;
+	margin: 10px;
+	box-shadow: 2px 2px 2px #263238;
+}
+.picture th{
+	color: black;
+	font-family: 'Galmuri9';
+	padding-bottom: 10px;
+}

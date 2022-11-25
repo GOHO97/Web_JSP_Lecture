@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<table>
+	<tr>
+		<td>
+			${loginMember.name }님 환영합니다.
+		</td>
+	</tr>
+	<tr>
+		<td id="profilePhoto">
+			<img src="img/${loginMember.photo }">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a>My Info</a>
+		</td>
+		<td align="center">
+			<div onclick="goPage();" id="LogOutDiv" align="center">LogOut</div>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

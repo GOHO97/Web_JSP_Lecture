@@ -1,0 +1,25 @@
+create table member2(
+	m_photo varchar2(150 char) not null,
+	m_id varchar2(15 char) primary key,
+	m_pw varchar2(15 char) not null,
+	m_name varchar2(10 char) not null,
+	m_birthday date not null,
+	m_email varchar2(20 char) not null,
+	m_addr varchar2(100 char) not null
+);
+
+drop table nftGallery3 cascade constraint purge;
+
+create table nftGallery4(
+	n_no number(5) primary key,
+	n_owner varchar2(15 char) not null,
+	n_title varchar2(30 char) not null,
+	n_txt varchar2(300 char) not null,
+	n_date date not null,
+	constraint n_write foreign key(n_owner) references member2(m_id) on delete cascade
+);
+
+create sequence nftGallery2_seq;
+
+insert into nftGallery4 values(nftGallery_seq.nextval, ?, ?, ?, sysdate);
+

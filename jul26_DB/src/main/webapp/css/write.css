@@ -1,0 +1,33 @@
+@charset "EUC-KR";
+@import url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
+
+#writeTable{
+	width:700px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #FFFF8D;
+	padding-bottom: 30px;
+	border-spacing: 0px;
+}
+
+#writeTable input{
+	width: 90%;
+	border: none;
+	height: 30px;
+	margin-top: 30px; 
+	font-family: 'Galmuri9';
+}
+
+#writeTable textarea{
+	width: 90%;
+	height: 400px;
+	border: none;
+	font-family: 'Galmuri9';
+}
+
+#writeTable button{
+	width: 10%;
+	border: none;
+	background-color: #FFB74D;
+	font-family: 'Galmuri9';
+}

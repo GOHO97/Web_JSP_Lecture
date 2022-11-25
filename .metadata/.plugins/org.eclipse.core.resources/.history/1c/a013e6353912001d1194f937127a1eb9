@@ -1,0 +1,7 @@
+function nftWriteCheck(){
+	var title = document.nftWriteF.title;
+	var photo = document.nftWriteF.photo;
+	var txt = document.nftWriteF.txt;
+	
+	
+}

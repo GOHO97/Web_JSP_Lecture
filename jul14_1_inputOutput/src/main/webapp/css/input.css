@@ -1,0 +1,60 @@
+@charset "EUC-KR";
+@import url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
+body {
+	background-color: #3E2723;
+}
+
+th {
+	font-family: 'Galmuri11';
+	font-weight: 700;
+	color: #6D4C41;
+	font-size: 17pt;
+}
+
+table{
+	text-shadow: 5px 5px 5px #212121;
+	border: #2E7D32 solid 5px;
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 200px;
+	box-shadow: 5px 5px 5px #212121;
+	width: 40%;
+}
+
+button {
+	font-family: 'Galmuri9';
+	color: #6D4C41;
+}
+
+.boxType{
+	font-family: 'Galmuri9';
+	color: #6D4C41;
+	width: 90%;
+	height: 110%;
+	text-align: center;
+	background-color: #EFEBE9;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+}
+.boxType:focus{
+	background-color: #BCAAA4;
+}
+.inputTitle{
+	font-family: 'Galmuri9';
+	color: #6D4C41;
+	font-size: 12pt;
+}
+
+select {
+	width: 95%;
+	height: 30px;
+	border: none;
+	font-family: 'Galmuri9';
+	border-bottom: #6D4C41;
+	outline:none;
+	font-size: 12pt;
+}
+
+

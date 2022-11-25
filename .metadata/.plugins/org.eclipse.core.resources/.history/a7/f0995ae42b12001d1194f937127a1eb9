@@ -1,0 +1,13 @@
+package com.ho.mgz.nftGalleryMain;
+
+import java.util.Date;
+
+public class NftGalleryDTO {
+	private String no;
+	private String owner;
+	private String photo;
+	private String title;
+	private String txt;
+	private Date date;
+	
+}

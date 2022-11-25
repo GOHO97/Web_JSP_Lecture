@@ -1,0 +1,18 @@
+@charset "EUC-KR";
+#noticeMain{
+	width: 900px;
+	background-color: #424242;
+	color: white;
+	font-size: 13pt;
+	box-shadow: 3px 3px 3px 3px #263238;
+}
+
+#noticeMain .dataTr{
+	background-color: white;
+	color: black;
+	font-size: 12pt;
+	cursor: pointer;
+}
+
+#noticeMain td{
+}

@@ -1,0 +1,38 @@
+@charset "EUC-KR";
+@import url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
+
+#boardArea{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Galmuri9';
+	border-spacing: 0px;
+}
+
+.BaContent {
+	border: #FFE0B2 solid 2px;
+}
+
+.BAContent td{
+	height: 40px;
+}
+
+.BANumTd{
+	width: 10%;
+}
+
+.BADateTd{
+	width: 20%;
+}
+
+.BATitleTd:hover{
+	color: #BDBDBD;
+}
+
+.BAContent:hover{
+	background-color: #FFCC80;
+}
+.BAContent a{
+	text-decoration: none;
+	color: black;
+}

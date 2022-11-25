@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="WController" method="post" name="bWriteF" onsubmit="return writeCheck();">
+		<table id="writeTable">
+			<tr>
+				<td align="center">
+					<input name="title" placeholder="제목 20자 제한" maxlength="20" autofocus="autofocus" autocomplete="off">
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<textarea name="txt" placeholder="내용 200자 제한" autocomplete="off"></textarea> 
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<button>등록</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

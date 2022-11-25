@@ -1,0 +1,37 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<table>
+	<tr>
+		<td>
+			프로필사진 닉네임(아이디)
+		</td>
+		<td>
+			댓글내용
+		</td>
+		<td>
+			날짜
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<form name="commentF" action="CommentController" method="post" onsubmit="return nftCommentCheck();">
+				<table>
+					<tr>
+						<td>
+							<input name="comment" maxlength="70" placeholder="댓글 최소 5글자, 최대 70글자" autofocus="autofocus" autocomplete="off">
+						</td>
+					</tr>
+				</table>
+			</form>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

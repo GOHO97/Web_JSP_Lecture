@@ -1,0 +1,22 @@
+function goJoinPage(){
+	location.href="JoinController";
+}
+
+function goMyInfoPage(){
+	location.href= "MemberInfoController";
+}
+
+function logOut(){
+	location.href="loginController";
+}
+
+function goMemberDelete(){
+	var really = prompt("진짜 탈퇴할거면 '탈퇴하겠습니다.'라고 입력하시오");
+	if(really=="탈퇴하겠습니다."){
+		location.href="MemberDeleteController";
+	}
+}
+
+function goNftGalleryWrite(){
+	location.href="NftGalleryWriteController";
+}

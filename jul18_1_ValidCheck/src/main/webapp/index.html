@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function check(){
+		var idInput = document.f.id; 
+		var pwInput = document.f.pw;
+		var pwChkInput = document.f.pwChk;
+		var ageInput = document.f.age;
+		
+		if(!idInput.value) {
+			alert("ID안씀");	
+			idInput.focus();
+			return false;
+		}
+		
+		if(idInput.value.length < 4) {
+			alert("ID는 4 ~ 8 글자로")
+			idInput.focus();
+			idInput.value ="";
+			return false;
+		}
+		
+		if(!pwInput.value) {
+			alert("PW안씀");
+			pwInput.focus();
+			return false;
+		}
+		
+		if(pwInput.value.length < 4) {
+			alert("PW는 4 ~ 8 자로");
+			pwInput.focus();
+			pwInput.value = "";
+			return false;
+		}
+		
+		if(pwInput.value != pwChkInput.value) {
+			alert("비밀번호가 일치하지 않습니다.");
+			pwChkInput.foucs();
+			pwChkInput.value= "";
+			return false;
+		}
+		
+		if(!ageInput.value) {
+			alert("나이 입력 필수");
+			ageInput.foucs();
+			return false;
+		}
+		
+		if(isNaN(ageInput.value)) {
+			alert("나이에 숫자만");
+			ageInput.focus();
+			ageInput.value = "";
+			return false;
+		}
+		
+		var containsNum = false; //숫자가 들어있나
+		var num = "1234567890"; // 저 중에 하나는 있어라.
+		
+		
+		//숫자가 들어있나 검사해서 있으면 true로 바꿀 것이다.
+		for (var i = 0; i < num.length; i++) {
+			if(pwInput.value.indexOf(num[i]) != -1) {
+				containsNum = true;
+				break;
+			}
+		}
+		
+		var containsUpper = false;
+		var upper = "ABCDEFGHIZKLMNOPQRSTUVWXYZ";
+		for (var i = 0; i < upper.length; i++) {
+			if(pwInput.value.indexOf(upper[i]) != -1) {
+				containUpper = true;
+				break;
+			}
+		}
+		
+		var containsCha = false;
+		var cha = "!@#$\"\\";
+		for (var i = 0; i < cha.length; i++) {
+			if(pwInput.value.indexOf(cha[i]) != -1){
+				containsCha = true;
+				break;
+			}			
+		}
+		
+		if(!containsNum || !containsUpper || !containsCha){
+			alert("비번에는 숫자/영대문자/특수문자(!@#$\"\\) 하나 이상 있어야");
+			pwInput.focus();
+			pwInput.value= "";
+			pwChkInput.value = "";
+			return false;
+		}
+		
+		
+		var uncontainsKor = false;
+		var unkor = "qwertyuiopasdfghjklzxcvbnm1234567890QWERTYUIOPASDFGHJKLZXCVBNM-_@.";
+		
+		for (var i = 0; i < idInput.value.length; i++) {
+			if(unkor.indexOf(idInput.value[i]) == -1) {
+			alert("한글, 특수문자 쓰지 말라고");
+			idInput.focus();
+			idInput.value = "";
+			return false;
+			}			
+		}
+		
+		
+		
+		return true;
+	}
+</script>
+</head>
+<body>
+	
+	<form action="ㅇㅇ" name="f" onsubmit="return check();">
+		ID : <input name="id" placeholder="필수, 4 ~ 8자, 한글/특수문자x" maxlength="8"><p>
+		PW : <input  name="pw" placeholder="필수, 4 ~ 8자, 숫자하나필수" maxlength="8"><p>
+		PW확인 : <input  name="pwChk" placeholder="필수, 4 ~ 8자, 숫자하나필수" maxlength="8"><p>
+		나이 : <input name="age" placeholder="필수, 숫자" maxlength="3"><p>
+		
+		<button>가입</button>
+	</form>
+</body>
+</html>

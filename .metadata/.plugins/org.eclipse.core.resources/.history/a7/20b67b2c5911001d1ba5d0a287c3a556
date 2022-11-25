@@ -1,0 +1,7 @@
+function goJoinPage(){
+	location.href="JoinController";
+}
+
+function goMyInfoPage(){
+	location.href="loginController";
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="hoValidChecker.js"></script>
+<script type="text/javascript" src="validCheck.js"></script>
+<link rel="stylesheet"  href="css/index.css">
+</head>
+<body>
+	<form action="VCMServlet" name="f" onsubmit="return check();" method="post" enctype="multipart/form-data">
+		<table>
+			<tr align="center">
+				<th colspan="2">과자</th>
+			</tr>
+			<tr align="center">
+				<td class="leftTd">
+					이름
+				</td>
+				<td>
+					<input name="name" autocomplete="off">
+				</td>
+			</tr>
+			<tr align="center">
+				<td class="leftTd">
+					가격
+				</td>
+				<td>
+					<input name="price" maxlength="5" autocomplete="off" placeholder="숫자만 입력">
+				</td>
+			</tr>
+			<tr align="center">
+				<td class="leftTd">
+					중량
+				</td>
+				<td>
+					<input name="weight" maxlength="7" autocomplete="off" placeholder="g단위로 숫자만 입력">
+				</td>
+			</tr>
+			<tr align="center">
+				<td class="leftTd">
+					유통기한
+				</td>
+				<td>
+					<input name="expDate" maxlength="8" autocomplete="off" placeholder="YYYYMMDD(기호 제외)">
+				</td>
+			</tr>
+			<tr align="center">
+				<td class="leftTd">
+					사진등록
+				</td>
+				<td>
+					<input name="img" type="file" id="imgTd">
+				</td>
+			</tr>
+			<tr align="center">
+				<td colspan="2">
+					<input type="reset">&nbsp;&nbsp;&nbsp;
+					<button>확인</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

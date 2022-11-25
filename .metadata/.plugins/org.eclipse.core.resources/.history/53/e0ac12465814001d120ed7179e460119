@@ -1,0 +1,34 @@
+package com.ho.aug.anyany;
+
+public class DTO {
+	private String name;
+	private String Characteristic;
+	
+	public DTO() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public DTO(String name, String characteristic) {
+		super();
+		this.name = name;
+		Characteristic = characteristic;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getCharacteristic() {
+		return Characteristic;
+	}
+
+	public void setCharacteristic(String characteristic) {
+		Characteristic = characteristic;
+	}
+	
+	
+}

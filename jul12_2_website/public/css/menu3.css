@@ -1,0 +1,34 @@
+@charset "EUC-KR";
+@import url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
+.aReview{
+	width: 900px;
+	background-color: #424242;
+	box-shadow: 3px 3px 3px #263238;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+.aReview .imgTd{
+	width:210px;
+}
+.aReview img{
+	max-width: 200px;
+}
+.aReview .idTd{
+	color: black;
+	font-family: 'Galmuri9';
+	font-size: 14pt;
+	font-weight: 900;
+}
+.aReview .dateTd{
+	color: white;
+	font-family: 'Galmuri9';
+	font-size: 10pt;
+	padding-right: 10px;
+}
+.aReview .txtTd{
+	color: #FFF59D;
+	font-family: 'Galmuri9';
+	font-size: 10pt;
+	height: 100px;
+	word-break: break-all;
+}

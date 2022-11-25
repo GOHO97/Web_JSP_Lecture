@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="EUC-KR">
+
+<title>Insert title here</title>
+
+<link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+
+	<!--
+
+		<form>속의 <button>누르면  
+
+		Output?id=XXX 요청
+
+	-->
+
+	<form action="IOMain" method="post">
+
+		<table>
+
+			<tr>
+
+				<th colspan="2">회원가입</th>
+
+			</tr>
+
+			<tr>
+
+				<td align="center" class="td1">ID</td>
+
+				<td align="center"><input name="id" maxlength="10"
+					placeholder="최대10글자" autofocus="autofocus" autocomplete="off"
+					class="boxType"></td>
+
+			</tr>
+
+			<tr>
+
+				<td align="center" class="td1">PW</td>
+
+				<td align="center"><input type="password" name="pw"
+					maxlength="10" placeholder="최대10글자" autocomplete="off"
+					class="boxType"></td>
+
+			</tr>
+
+			<tr>
+
+				<td align="center" class="td1">성별</td>
+
+				<td align="center">
+					<!-- name이 같은것중에 하나만 선택가능 --> <input type="radio" name="gender"
+					checked="checked" value="남">남자&nbsp;&nbsp;&nbsp; <input
+					type="radio" name="gender" value="여">여자&nbsp;&nbsp;&nbsp; <input
+					type="radio" name="gender" value="기">기타
+
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="center" class="td1">주소</td>
+
+				<td align="center"><select name="address">
+
+						<option value="써울">서울</option>
+
+						<option>경기</option>
+
+						<option>강원</option>
+
+						<option>충청</option>
+
+						<option>전라</option>
+
+						<option>경상</option>
+
+						<option>제주</option>
+
+				</select></td>
+
+			</tr>
+
+			<tr>
+
+				<td align="center" class="td1">취미</td>
+
+				<td align="center">
+					<!-- 
+
+						요청파라메터가 주소에 실려가는 GET방식으로는 표현이 안될테니 불가 
+
+						POST방식을 써야	
+
+					--> <!-- 목록중에 여러개 --> <input type="checkbox" name="hobby" value="잠">잠&nbsp;&nbsp;&nbsp;
+
+					<input type="checkbox" name="hobby" value="요리">요리<br>
+
+					<input type="checkbox" name="hobby" value="낚시">낚시&nbsp;&nbsp;&nbsp;
+
+					<input type="checkbox" name="hobby" value="여행">여행
+
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td align="center" class="td1">등하교<br>수단
+				</td>
+
+				<td align="center">
+					<input type="checkbox" name="ride" value="버스">버스&nbsp;&nbsp; 
+					<input type="checkbox"name="ride" value="지하철">지하철&nbsp;&nbsp;
+					<input type="checkbox" name="ride" value="자가용">자가용
+				</td>
+
+			</tr>
+			<tr>
+				<td align="center" class="td1">자기<br>소개</td>
+				<td>
+					<textarea rows="introduce"></textarea>
+				</td>
+			</tr>
+
+			<tr>
+
+				<td colspan="2" align="center">
+					<button class="btnType">가입</button>
+					<input type="reset" value="리셋" class="btnType">
+
+				</td>
+
+			</tr>
+
+		</table>
+
+	</form>
+
+</body>
+
+</html>

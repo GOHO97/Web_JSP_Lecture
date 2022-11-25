@@ -1,0 +1,10 @@
+package com.ho.jul27.menu1.any;
+
+import javax.servlet.http.HttpServletRequest;
+
+public class M1DAO {
+	
+	public static void test(HttpServletRequest req) {
+		System.out.println("Å×½ºÆ®");
+	}
+}

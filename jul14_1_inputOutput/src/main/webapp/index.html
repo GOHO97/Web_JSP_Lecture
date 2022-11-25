@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/input.css">
+</head>
+<body>
+	<form action="InOut">
+	<table>
+		<tr>
+			<th colspan="2">
+				랜덤한 숫자를 드려요.
+			</th>
+		</tr>
+		<tr>
+			<td align="center" class="inputTitle">
+				얻고 싶은 숫자 갯수
+			</td>
+			<td align="center" class="inputTitle">
+				최대 숫자 지정
+			</td>
+		</tr>
+		<tr>
+			<td align="center">
+				<input name="randomNum" class="boxType" autofocus="autofocus" type="number" autocomplete="off" placeholder="마음껏 넣어줘">
+			</td>
+			<td align="center">
+				<input name="range" class="boxType" type="number" autocomplete="off" placeholder="ex) 45">
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center">
+				<button>입력</button>
+			</td>
+		</tr>
+	</table>
+</form>
+<form action="InOut" method="post">	
+	<table>
+		<tr>
+			<td rowspan="8" align="center" class="inputTitle">
+				주소
+			</td>
+			<td align="center">
+				<input name="address" type="radio" checked="checked" value="서울">서울
+			</td>
+		</tr>
+		<tr>
+			<td align="center">
+				<input name="address" type="radio" value="경기">경기
+			</td>
+		</tr>
+		<tr>
+			<td align="center">
+				<input name="address" type="radio" value="수원">수원
+			</td>
+		</tr>
+		<tr>
+			<td align="center">
+				<input name="address" type="radio" value="대전">대전
+			</td>
+		</tr>
+		<tr>
+			<td align="center">
+				<input name="address"  type="radio" value="대구">대구
+			</td>
+		</tr>
+		<tr>
+			<td align="center">
+				<input name="address"  type="radio" value="부산">부산
+			</td>
+		</tr>
+		<tr>
+			<td align="center">
+				<input name="address" type="radio" value="광주">광주
+			</td>
+		</tr>
+		<tr>
+			<td align="center">
+				<input name="address" type="radio" value="제주">제주
+			</td>
+		</tr>
+		<tr>
+			<td align="center" class="inputTitle">주소</td>
+			<td align="center">
+				<select name="address">
+					<option>서울</option>
+					<option>경기</option>
+					<option>수원</option>
+					<option>대전</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td align="center" class="inputTitle">취미</td>
+			<td align="center">
+				<input type = "checkbox" name="hobby" value="잠">잠&nbsp;&nbsp;&nbsp;
+				<input type = "checkbox" name="hobby" value="게임">게임&nbsp;&nbsp;&nbsp;
+				<input type = "checkbox" name="hobby" value="요리">요리&nbsp;&nbsp;&nbsp;
+				<input type = "checkbox" name="hobby" value="독서">독서&nbsp;&nbsp;&nbsp;
+			</td>
+		</tr>
+		<tr>
+			<td align="center" class="inputTitle">등하교 수단</td>
+			<td align="center">
+				<input type = "checkbox" name="Transportation" value="버스">버스&nbsp;&nbsp;&nbsp;
+				<input type = "checkbox" name="Transportation" value="지하철">지하철&nbsp;&nbsp;&nbsp;
+				<input type = "checkbox" name="Transportation" value="자가용">자가용&nbsp;&nbsp;&nbsp;
+			</td>
+		</tr>
+		
+	</table>
+	</form>
+</body>
+</html>

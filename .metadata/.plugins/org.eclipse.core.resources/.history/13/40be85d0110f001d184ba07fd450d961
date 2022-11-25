@@ -1,0 +1,25 @@
+function joinCheck(){
+	var photo = document.joinF.photo;
+	var id = document.joinF.id;
+	var pw = document.joinF.pw;
+	var pw2 = document.joinF.pw2;
+	var name = document.joinF.name;
+	var email = document.joinF.email;
+	var addr1 = document.joinF.addr1;
+	var addr2 = document.joinF.addr2;
+	var addr3 = document.joinF.addr3;
+	
+	if(reqCk(photo) || fileType(photo, img) || fileType(photo, png) || fileType(photo, jpg)){
+		alert("프로필 사진을 확인해주세요.");
+		photo.value = "";
+		photo.foucs();
+	}
+	
+	if(reqCk(id) || korCk(id)){
+		alert("id를 확인해주세요");
+		id.value = "";
+		id.foucs();
+	}
+	
+	return true;
+}

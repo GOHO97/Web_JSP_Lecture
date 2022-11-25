@@ -1,0 +1,62 @@
+@charset "EUC-KR";
+@import url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
+a {
+	text-decoration: none;
+}	
+body {
+	background-color: #FFCA28;
+	padding: 0px;
+}
+#siteTitleArea{
+	position: fixed;
+	left:0px;
+	top:0px;	
+	width: 100%;
+}
+#siteTitle{
+	width: 1000px;
+	height: 80px;
+	font-family: 'Galmuri11';
+	font-weight: 700;
+	font-size: 30pt;
+	color: #000000;
+	text-shadow: 3px 3px 3px #E0E0E0;
+}
+#siteMenuArea{
+	border-bottom: #000000 solid 2px;
+	box-shadow: 3px 3px 3px 3px #263238;
+}
+#siteMenu{
+	width: 1000px;
+	height: 35px;
+}
+#siteMenu td{
+	margin-right: 250px;
+}
+#siteMenu a{
+	color: #000000;
+	font-family: 'Galmuri9';
+	font-size: 20pt;
+	
+}
+#siteMenu a:hover{
+	color:#616161
+}
+#siteMenu a:active{
+	color:#616161
+}
+#siteContentArea{
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 150px;
+	
+}
+
+::-webkit-scrollbar{
+	display: none;
+}
+
+#homeImg{
+	width: 100%;
+}

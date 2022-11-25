@@ -1,0 +1,40 @@
+@charset "EUC-KR";
+@import url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
+
+table{
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+	box-shadow: 3px 3px 3px #757575;
+	width: 450px;
+	height: 600px;
+	font-size: 80px;
+}
+
+th{
+	font-family: 'Galmuri11';
+	font-weight: 700;
+	color: white;
+	background-color: #B9F6CA;
+	
+}
+
+.cm{
+	color: #B9F6CA;
+	font-family: 'Galmuri9';
+}
+
+.§³{
+	color: #FFF9C4;
+	font-family: 'Galmuri9';
+}
+
+.¡É{
+	color: #84FFFF;	
+	font-family: 'Galmuri9';
+}
+
+.kmh{
+	color: #FFEBEE;
+	font-family: 'Galmuri9';
+}
